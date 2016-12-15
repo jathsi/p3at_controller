@@ -1,0 +1,13 @@
+<launch>
+<node pkg="robot_pose_ekf" type="robot_pose_ekf" name="robot_pose_ekf">
+ <remap from="node1/odom" to="sim_p3at/odom"/>
+ <param name="node1/output_frame" value="odom"/>
+ <param name="node1/freq" value="30.0"/>
+ <param name="node1/sensor_timeout" value="1.0"/>
+ <param name="node1/odom_used" value="true"/>
+ <param name="node1/imu_used" value="true"/>
+ <param name="node1/vo_used" value="false"/>
+ <param name="node1/debug" value="false"/>
+ <param name="node1/self_diagnose" value="false"/>
+</node>
+</launch>
